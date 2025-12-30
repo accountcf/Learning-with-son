@@ -1,14 +1,13 @@
-
 import React, { useState } from 'react';
-import { ScreenType, Lesson } from './types';
-import Dashboard from './screens/Dashboard';
-import BalloonsActivity from './screens/BalloonsActivity';
-import ComparisonActivity from './screens/ComparisonActivity';
-import ShapesActivity from './screens/ShapesActivity';
-import AppleMathActivity from './screens/AppleMathActivity';
-import TracingActivity from './screens/TracingActivity';
-import LettersActivity from './screens/LettersActivity';
-import FeedbackScreen from './screens/FeedbackScreen';
+import { ScreenType, Lesson } from './types.ts';
+import Dashboard from './screens/Dashboard.tsx';
+import BalloonsActivity from './screens/BalloonsActivity.tsx';
+import ComparisonActivity from './screens/ComparisonActivity.tsx';
+import ShapesActivity from './screens/ShapesActivity.tsx';
+import AppleMathActivity from './screens/AppleMathActivity.tsx';
+import TracingActivity from './screens/TracingActivity.tsx';
+import LettersActivity from './screens/LettersActivity.tsx';
+import FeedbackScreen from './screens/FeedbackScreen.tsx';
 
 const LESSONS: Lesson[] = [
   { id: 'BALLOONS', title: 'Biệt Đội Bóng Bay', description: 'Đếm số & Tô màu', icon: 'toys', color: 'bg-primary' },

@@ -1,16 +1,14 @@
-
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  server: {
-    port: 5173,
-    host: true, // Cho phép truy cập qua mạng nội bộ (IP)
-  },
   build: {
     outDir: 'dist',
-    sourcemap: true,
-  }
+    rollupOptions: {
+      input: {
+        main: './index.html',
+      },
+    },
+  },
 });

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -8,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
         tailwind.config = {
@@ -39,19 +38,7 @@
             font-family: 'Lexend', sans-serif;
             -webkit-tap-highlight-color: transparent;
             touch-action: manipulation;
-        }
-        #file-warning {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: white;
-            z-index: 9999;
-            padding: 2rem;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            background-color: #f8f8f5;
         }
     </style>
 <script type="importmap">
@@ -69,22 +56,6 @@
 </head>
 <body class="bg-background text-gray-900 overflow-x-hidden">
     <div id="root"></div>
-
-    <div id="file-warning" style="display: none;">
-        <div style="font-size: 5rem;">⚠️</div>
-        <h1 style="font-size: 2rem; font-weight: 900; margin-top: 1rem;">Cần chạy qua Server!</h1>
-        <p style="color: #666; max-width: 500px; margin-top: 1rem; font-size: 1.1rem;">
-            Vui lòng không mở trực tiếp file HTML. Sử dụng link Vercel đã được deploy.
-        </p>
-    </div>
-
-    <script>
-        if (window.location.protocol === 'file:') {
-            document.getElementById('file-warning').style.display = 'flex';
-            document.getElementById('root').style.display = 'none';
-        }
-    </script>
-
     <script type="module" src="./index.tsx"></script>
 <script type="module" src="/index.tsx"></script>
 </body>
