@@ -1,0 +1,7 @@
+{
+  "name": "Bé Học Giỏi - Math & Logic Fun",
+  "description": "An interactive educational platform for children aged 4-6, featuring number sequences, comparisons, shape coloring, and basic math.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
